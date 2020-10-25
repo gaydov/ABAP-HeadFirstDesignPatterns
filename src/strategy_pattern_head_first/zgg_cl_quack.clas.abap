@@ -5,6 +5,7 @@ CLASS zgg_cl_quack DEFINITION
     INTERFACES zgg_if_quack_behavior.
 
   PROTECTED SECTION.
+
   PRIVATE SECTION.
 
 ENDCLASS.

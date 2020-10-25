@@ -5,7 +5,9 @@ CLASS zgg_cl_squeak DEFINITION
     INTERFACES zgg_if_quack_behavior.
 
   PROTECTED SECTION.
+
   PRIVATE SECTION.
+
 ENDCLASS.
 
 

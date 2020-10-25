@@ -5,7 +5,9 @@ CLASS zgg_cl_fly_rocketpowered DEFINITION
     INTERFACES zgg_if_fly_behavior.
 
   PROTECTED SECTION.
+
   PRIVATE SECTION.
+
 ENDCLASS.
 
 

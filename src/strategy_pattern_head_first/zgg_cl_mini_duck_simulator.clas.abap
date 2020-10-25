@@ -21,28 +21,24 @@ CLASS zgg_cl_mini_duck_simulator IMPLEMENTATION.
 
     mallard_duck = NEW zgg_cl_mallard_duck( ).
     out->write(
-      EXPORTING
-        data = mallard_duck->perform_quack( )
+        data = mallard_duck->perform_quack( ) " Quack
     ).
 
     out->write(
-      EXPORTING
-        data = mallard_duck->perform_fly( )
+        data = mallard_duck->perform_fly( ) " I am flying
     ).
 
     model_duck = NEW zgg_cl_model_duck( ).
 
     out->write(
-      EXPORTING
-        data = model_duck->perform_fly( )
+        data = model_duck->perform_fly( ) " I cannot fly
     ).
 
     " Change the behavior at runtime.
     model_duck->set_fly_behavior( NEW zgg_cl_fly_rocketpowered( ) ).
 
     out->write(
-      EXPORTING
-        data = model_duck->perform_fly( )
+        data = model_duck->perform_fly( ) " I am flying with a rocket
     ).
 
   ENDMETHOD.

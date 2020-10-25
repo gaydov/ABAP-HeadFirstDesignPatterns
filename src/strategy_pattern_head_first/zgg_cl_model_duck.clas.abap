@@ -7,7 +7,9 @@ CLASS zgg_cl_model_duck DEFINITION
     METHODS display REDEFINITION.
 
   PROTECTED SECTION.
+
   PRIVATE SECTION.
+
 ENDCLASS.
 
 
@@ -26,6 +28,5 @@ CLASS zgg_cl_model_duck IMPLEMENTATION.
   METHOD display.
     output = 'I am a model duck'.
   ENDMETHOD.
-
 
 ENDCLASS.
