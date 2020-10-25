@@ -1,5 +1,4 @@
-CLASS zgg_cl_mallard_duck DEFINITION
-  PUBLIC
+CLASS zgg_cl_mallard_duck DEFINITION PUBLIC
   INHERITING FROM zgg_cl_duck.
 
   PUBLIC SECTION.
@@ -8,9 +7,7 @@ CLASS zgg_cl_mallard_duck DEFINITION
     METHODS display REDEFINITION.
 
   PROTECTED SECTION.
-
   PRIVATE SECTION.
-
 ENDCLASS.
 
 

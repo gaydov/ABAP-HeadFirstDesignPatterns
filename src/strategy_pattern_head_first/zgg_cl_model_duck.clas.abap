@@ -1,5 +1,4 @@
-CLASS zgg_cl_model_duck DEFINITION
-  PUBLIC
+CLASS zgg_cl_model_duck DEFINITION PUBLIC
   INHERITING FROM zgg_cl_duck.
 
   PUBLIC SECTION.
@@ -7,9 +6,7 @@ CLASS zgg_cl_model_duck DEFINITION
     METHODS display REDEFINITION.
 
   PROTECTED SECTION.
-
   PRIVATE SECTION.
-
 ENDCLASS.
 
 

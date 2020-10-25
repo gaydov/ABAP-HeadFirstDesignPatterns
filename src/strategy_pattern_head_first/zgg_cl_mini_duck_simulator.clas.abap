@@ -1,13 +1,10 @@
-CLASS zgg_cl_mini_duck_simulator DEFINITION
-  PUBLIC.
+CLASS zgg_cl_mini_duck_simulator DEFINITION PUBLIC.
 
   PUBLIC SECTION.
     INTERFACES if_oo_adt_classrun.
 
   PROTECTED SECTION.
-
   PRIVATE SECTION.
-
 ENDCLASS.
 
 
@@ -19,6 +16,9 @@ CLASS zgg_cl_mini_duck_simulator IMPLEMENTATION.
     DATA mallard_duck TYPE REF TO zgg_cl_duck.
     DATA model_duck TYPE REF TO zgg_cl_duck.
 
+    " Real duck
+    out->write( 'Real duck:' ).
+
     mallard_duck = NEW zgg_cl_mallard_duck( ).
     out->write(
         data = mallard_duck->perform_quack( ) " Quack
@@ -28,6 +28,8 @@ CLASS zgg_cl_mini_duck_simulator IMPLEMENTATION.
         data = mallard_duck->perform_fly( ) " I am flying
     ).
 
+    " Model duck
+    out->write( 'Model duck:' ).
     model_duck = NEW zgg_cl_model_duck( ).
 
     out->write(
@@ -36,6 +38,8 @@ CLASS zgg_cl_mini_duck_simulator IMPLEMENTATION.
 
     " Change the behavior at runtime.
     model_duck->set_fly_behavior( NEW zgg_cl_fly_rocketpowered( ) ).
+
+    out->write( 'Model duck after change of behavior:' ).
 
     out->write(
         data = model_duck->perform_fly( ) " I am flying with a rocket

@@ -1,13 +1,10 @@
-CLASS zgg_cl_fly_rocketpowered DEFINITION
-  PUBLIC.
+CLASS zgg_cl_fly_rocketpowered DEFINITION PUBLIC.
 
   PUBLIC SECTION.
     INTERFACES zgg_if_fly_behavior.
 
   PROTECTED SECTION.
-
   PRIVATE SECTION.
-
 ENDCLASS.
 
 

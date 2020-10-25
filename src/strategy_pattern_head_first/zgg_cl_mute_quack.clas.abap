@@ -1,13 +1,10 @@
-CLASS zgg_cl_mute_quack DEFINITION
-  PUBLIC.
+CLASS zgg_cl_mute_quack DEFINITION PUBLIC.
 
   PUBLIC SECTION.
     INTERFACES zgg_if_quack_behavior.
 
   PROTECTED SECTION.
-
   PRIVATE SECTION.
-
 ENDCLASS.
 
 

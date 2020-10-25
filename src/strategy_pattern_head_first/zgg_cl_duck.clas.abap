@@ -29,7 +29,6 @@ CLASS zgg_cl_duck DEFINITION
     DATA quack_behavior TYPE REF TO zgg_if_quack_behavior.
 
   PRIVATE SECTION.
-
 ENDCLASS.
 
 
